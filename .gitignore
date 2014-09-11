@@ -1,0 +1,5 @@
+/bin
+/lib
+/include
+/application/db.sqlite3
+/application/application/__pycache__
