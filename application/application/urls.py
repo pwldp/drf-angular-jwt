@@ -48,7 +48,15 @@ urlpatterns+= patterns(
     url(r'^api/token-auth/', 'rest_framework_jwt.views.obtain_jwt_token'),
 )
 
+#
+# Server AngularJS frontend
+#
+from django.views.generic import TemplateView
 
+urlpatterns+= patterns(
+    '',
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name="home"),  # see TEMPLATE_DIRS and STATICFILES_DIRS in settings.py
+)
 #
 # http://blog.kevinastone.com/getting-started-with-django-rest-framework-and-angularjs.html
 #

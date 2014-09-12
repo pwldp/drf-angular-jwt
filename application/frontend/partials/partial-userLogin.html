@@ -1,0 +1,54 @@
+<div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+    
+    
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3><strong>Login</strong></h3>
+    </div>
+    <div class="panel-body">
+    
+        <p ng-data-controller="ctrlUserLogin" >
+            <form ng-submit="processForm()">
+                
+                <div class="form-group">
+<!--                     <label for="userEmail">Username / email:</label> -->
+                    <input type="email" class="form-control" id="userName" placeholder="Enter email address" ng-model="formUserLogin.userName" ng-minlength="6" ng-required="1" required>
+                </div>
+                
+                <div class="form-group">
+<!--                     <label for="userPassword">Password:</label> -->
+                    <input type="email" class="form-control" id="userPassword" placeholder="Enter password" ng-model="formUserLogin.userPassword" ng-minlength="6" ng-required="1" required>
+                </div>
+                
+                <button type="submit" class="btn btn-success btn-block" >
+                    Sign me in
+                    &nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-log-in"></span>
+                </button>
+                <br />
+                <p class='text-center'>
+                    <a ui-sref="userPasswordReset">
+                        <strong>I forgot my password</strong>
+                    </a>
+                   
+                </p>
+                <p class='text-center'>
+                    <a ui-sref="userRegister"><strong>Create new account</strong></a>
+                </p>
+   
+            </form>
+
+            <div>
+                {{formUserLogin.userName}}  {{formUserLogin.userPassword}}
+            </div>
+        </p>
+    
+
+    </div>
+
+    </div>
+    </div>
+
+</div>

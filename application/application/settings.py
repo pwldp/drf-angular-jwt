@@ -106,3 +106,18 @@ REST_FRAMEWORK = {
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
 }
+
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'frontend'),
+)
+print(TEMPLATE_DIRS)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "frontend"),
+)
+
+
+#
+# EOF
+#
