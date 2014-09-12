@@ -20,11 +20,23 @@ Please follow those steps:
 
 * change directory: ```cd application```
 
-* init Django application: ```python ./manage.py syncdb```, and create admin user
+* init Django application: ```python ./manage.py syncdb```, and create user (username: ```admin``` and password: ```abc123```)
 
 * run application: ```python ./manage.py runserver``` (this serves application on localhost on port 8000)
 
-* run browser and open page http://localhost:8000
+
+
+
+## Run in browser
+
+* run browser window
+
+* open page ```http://localhost:8000```, it shows home page
+
+* open page ```http://localhost:8000/api```, it shows DRF API Root, please login (admin:abc123) to get access
+
+* open page ```http://localhost:8000/admin```, it gets access to Django's admin pages
+
 
 
 ## API Examples
