@@ -1,9 +1,6 @@
 drf-angular-jwt
 ===============
 
-DjangoRestFramework + Angularjs + JWT
-
-
 Simple application boilerplate using: 
 
 * [Django Rest Framwork](http://www.django-rest-framework.org/)
@@ -27,10 +24,10 @@ Please follow those steps:
 
 * run application: ```python ./manage.py runserver``` (this serves application on localhost on port 8000)
 
-* run browser and open page http://localhsot:8000
+* run browser and open page http://localhost:8000
 
 
-## Examples
+## API Examples
 
 
 * Get token:
